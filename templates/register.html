@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/login.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- form -->
+    <div class="container" id="container">
+
+        <!-- sign up -->
+        <div class="form signup-container">
+            <form action="/register" method="POST">
+                <h1>Create an account</h1>
+
+                <!-- icons -->
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                </div>
+
+                <button>Sign up</button>
+            </form>
+        </div>
+
+
+
+        
+        <!-- overlay -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <img src="static/image/d2.jpg" style="width: 12rem; height: 10rem; margin-top: 8%; border-radius: 10px;">
+                    <button class="btn" id="signin">Sign in</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello User!</h1>
+                    <p>Enter your personal details and star your journey with us</p>
+                    <img src="static/image/d3.jpg" style="width: 12rem; height: 12rem; margin-top: 8%; border-radius: 10px;">
+                    <a href="{{url_for('login')}}"><button class="btn" id="signup">Sign in</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+
+</html>

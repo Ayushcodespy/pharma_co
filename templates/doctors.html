@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Doctors</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/doctors.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital@1&family=Poetsen+One&family=Sedan+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="/static/image/logo3.png"></div>
+            <div class="company-name">
+                <h1>PHARMA CO</h1>
+            </div>
+            <div class="rightside"></div>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('doctors')}}">Doctor</a></li>
+                <li><a href="{{url_for('medicines')}}">Medicines</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+                <li><a href="{{url_for('login')}}">Logout</a></li>
+            </ul>
+            <div class="icon">
+                <div class="fa fa-search" id="search-btn"></div>
+                <a href="{{url_for('cart')}}"><div class="fa fa-shopping-cart" id="cart-btn" style="color: black;"></div></a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <section class="top">
+        <div class="container">
+            <h1 class="heading">TOP SPECIALIST</h1>
+            <hr>
+        </div>
+
+        <div class="upper">
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic2.png">
+                <h1 class="title">Dermatology</h1>
+                <p>Specialists for skin treatment and hair treatment</p>
+                <p>Pimples, Acne, Allergy, Infection, Hairfall, Dandruff</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic6.png">
+                <h1 class="title">Paediatrics</h1>
+                <p>Specialists to care and treatment for children</p>
+                <p>Viral, Constipation, Autism, Nutrition</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic3.png">
+                <h1 class="title">General Physician</h1>
+                <p>Managing acute medical conditions</p>
+                <p>Migrain, Typhoid, Dengue, Abdominal, Infections</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic1.png">
+                <h1 class="title">Endocrinologists</h1>
+                <p>Specialists on harmones and metabolism, like</p>
+                <p>diabetes, thyroid, infertility, bone disorders.</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic5.png">
+                <h1 class="title">Cardiologists</h1>
+                <p>Expert's on heart and blood vessels, </p>
+                <p>heart failure or attack, high B.P.</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic4.png">
+                <h1 class="title">Gastroenterologists</h1>
+                <p>Specialists in digestive organs including liver,</p>
+                <p>stomach, pancreas, gallblader, diarrhea, jaundice</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic7.png">
+                <h1 class="title">Neurologists</h1>
+                <p>Specialists for nervous system includes</p>
+                <p>brain, spinal cord, Parkinson's, Alzheimer disease</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box-container"></div>
+            <div class="box">
+                <img src="/static/image/pic8.png">
+                <h1 class="title">Recommended Doctors</h1>
+                <p>Top rated pharmaco doctors,</p>
+                <p>includes all Specialists</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bottom">
+        <div class="contain">
+            <h1 class="heading">OTHER SPECIALISTS</h1>
+            <hr>
+        </div>
+
+        <div class="box2-container">
+            <div class="box2">
+                <div class="img-container">
+                    <div class="inner-skew">
+                        <img src="/static/image/d8.jpg">
+                    </div>
+                </div>
+                <h1 class="title">Nephrologists</h1>
+                <p>Expert's in Kidney diseases</p>
+                <p>fluid & mineral imbalance linked to kidney</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box2">
+                <div class="img-container">
+                    <div class="inner-skew">
+                        <img src="/static/image/pic9.png">
+                    </div>
+                </div>
+                <h1 class="title">Dentist</h1>
+                <p>Diagnoses and treats oral health,</p>
+                <p>taking care of teeths and gums which reduces risk of stroke etc..</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box2">
+                <div class="img-container">
+                    <div class="inner-skew">
+                        <img src="/static/image/pic10.png">
+                    </div>
+                </div>
+                <h1 class="title">Gynecologists</h1>
+                <p>Expert in Women's health including</p>
+                <p>pregnancy, pelvic exams, reproductive health etc..</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+
+            <div class="box2">
+                <div class="img-container">
+                    <div class="inner-skew">
+                        <img src="/static/image/pic11.png">
+                    </div>
+                </div>
+                <h1 class="title">Many other Specialists</h1>
+                <p>Other Specialists including</p>
+                <p>oncologists, pathologists, plastic surgeons, psychiatrists ..</p>
+                <a href="#" class="btn">Read More....</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Doctors</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Medicines</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Rahul & Ayush</span></p>
+            <a href="">Email : Ayushpatel@gmail.com || Rahulchaurasiya@gmail.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>

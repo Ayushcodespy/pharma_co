@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/cart.css')}}">
+</head>
+<body>
+
+    <h1>Shopping Cart</h1>
+    <div class="container">
+        <div class="cart-items">
+            {% for item in cart_items %}
+            <div class="cart-item" id="cart-item-{{ item.id }}">
+                <img src="{{ url_for('static', filename=item.image) }}" alt="{{ item.name }}">
+
+                <div class="item-info">
+                    <h3>{{ item.name }}</h3>
+                    <p>Price: ${{ item.price }}</p>
+                    <p>Quantity: {{ item.quantity }}</p>
+                </div>
+                <form action="/remove_item/{{ item.id }}" method="post">
+                    <button type="submit" class="btn-remove">Remove</button>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="cart-summary">
+            <h2>Summary</h2>
+            <p>Total Price: ${{ total_price }}</p>
+        </div>
+    </div>
+
+</body>
+</html>

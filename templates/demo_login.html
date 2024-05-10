@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Web Form Example</title>
+</head>
+<body>
+    <h1>Flask Web Form Example</h1>
+
+    <form action="/" method="POST">
+        <input type="text" name="name" placeholder="First Name">
+        <input type="text" name="password" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Hello, {{ first_name }} {{ last_name }}!</h2>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/appointment.css')}}">
+</head>
+<body>
+    <header>
+        <img class="logo" src="static/image/copharma-logo.png" alt="">
+        <img src="static/image/appointment.png" alt="" class="heading">
+    </header>
+    <div class="container">
+        <form action="/appointment" id="ft-form" method="POST" accept-charset="UTF-8">
+            <fieldset>
+              <legend>For person</legend>
+              <label>
+                Name
+                <input type="text" name="name" required>
+              </label>
+              <div class="two-cols">
+                <label>
+                  Email address
+                  <input type="email" name="email" required> <!-- Updated name attribute to "email" -->
+                </label>
+                <label>
+                  Phone number
+                  <input id="myNumberInput" type="number" name="phone" required>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Appointment request</legend>
+              <div class="two-cols">
+                <label>
+                  Date
+                  <input type="date" name="appointment_date" required>
+                </label>
+                <div class="inline">
+                  <label>
+                    <input type="radio" name="timing" value="Morning">
+                    Morning
+                  </label>
+                  <label>
+                    <input type="radio" name="timing" value="Afternoon">
+                    Afternoon
+                  </label>
+                </div>
+              </div>
+              <p>Confirmation requested by</p>
+              <div class="inline">
+                <label>
+                  <input type="radio" name="requested_by" value="email" checked>
+                  Email
+                </label>
+                <label>
+                  <input type="radio" name="requested_by" value="phone">
+                  Phone call
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" name="data_processing_confirmed" value="Yes" required> <!-- Corrected name attribute -->
+                  <span>I agree to the processing of my data for the handling of my request by <b> CO-PHARMA</b>.</span>
+                </label>
+              </div>
+            </fieldset>
+            <div class="btns">
+              <input type="text" name="_gotcha" value="" style="display:none;">
+              <input class="button" type="submit" value="Submit request">
+            </div>
+          </form>
+    </div>
+</body>
+</html>

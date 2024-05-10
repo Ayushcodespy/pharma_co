@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/medicines.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital@1&family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="/static/image/logo3.png"></div>
+            <div class="company-name">
+                <h1>PHARMA CO</h1>
+            </div>
+            <div class="rightside"></div>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('doctors')}}">Doctor</a></li>
+                <li><a href="{{url_for('medicines')}}">Medicines</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+                <li><a href="{{url_for('login')}}">Logout</a></li>
+            </ul>
+            <div class="icon">
+                <div class="fa fa-search" id="search-btn"></div>
+                <a href="{{url_for('cart')}}"><div class="fa fa-shopping-cart" id="cart-btn" style="color: black;"></div></a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1st section -->
+    <section class="top" id="top">
+        <div class="container">
+            <h1 class="heading">WELLNESS</h1>
+            <hr>
+        </div>
+
+        <div class="box-container">
+
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi5.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Treatment Perfume</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi6.png">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Health Care Soap and Shampoo</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi7.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Skin Care Product</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi8.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Sanitizers, Liquors etc.</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 2nd section -->
+    <section class="middle1" id="middle1">
+        <div class="container">
+            <h1 class="heading">BABY CARE</h1>
+            <hr>
+        </div>
+        <div class="box-container">
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/@1.png">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Johnson's baby care</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med2.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Aveeno Care Pack</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med3.png">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Soap, Moisturizers, etc.</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med4.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Himalaya Baby Care Product</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 3rd section -->
+    <section class="middle2" id="middle2">
+        <div class="container">
+            <h1 class="heading">PREGNANCY</h1>
+            <hr>
+        </div>
+        <div class="box-container">
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med6.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Moisturizers for Skin Care</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med7.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Organic Products - facewash, mask etc.</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med5.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Stretch Mark Removal Oil</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med12.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Hair Care Shampoo</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4th section -->
+    <section class="middle3" id="middle3">
+        <div class="container">
+            <h1 class="heading">MEDICINES</h1>
+            <hr>
+        </div>
+        <div class="box-container">
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi1.png">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Mild Fever, Cough, Scream etc.</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi2.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Stomach and Gas issues</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi3.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Mild Health Issue tablets</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi4.png">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Pain Killers</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5th section -->
+    <section class="bottom" id="bottom">
+        <div class="container">
+            <h1 class="heading">LAB TEST</h1>
+            <hr>
+        </div>
+        <div class="box-container">
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi9.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Vitamins and Nutritients</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi10.jpeg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Body Checkup</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/med26.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Women's Health Care</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi11.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Sugar and Other checkup</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6th section -->
+    <section class="middle3" id="middle3">
+        <div class="container">
+            <h1 class="heading">SHOP BY CATEGORIES</h1>
+            <hr>
+        </div>
+        <div class="box-container">
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi12.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Calcium Magnesium Tablet</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi13.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Karela Jamun Juice</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi14.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Healthy Roasted Seed Mix</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi15.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Selcal 500mg</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7th section -->
+    <section class="middle3" id="middle3">
+        <div class="container">
+            <h1 class="heading">MACHINES FOR HOME CHECKUP</h1>
+            <hr>
+        </div>
+        <div class="box-container">
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi19.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Blood Pressure(B.P.)</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi20.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Sugar Machine</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi21.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Steam Machine</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+            <!-- 1 box -->
+            <div class="box">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="/static/image/medi22.jpg">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <!-- learn-btn -->
+                        <p>It is a kind of one of its hygeine
+                            product that gives a soulful smell
+                            and better for your health
+                        </p>
+                        <a href="#" class="learn-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Thermometer</a>
+                        <span>New arrival</span>
+                    </div>
+                    <a href="#" class="price">Rs.867</a>
+                </div>
+                <!-- button -->
+                <a href="#" class="my-button">Order Now</a>
+                <a href="#" class="my-button">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Doctors</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Medicines</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Rahul & Ayush</span></p>
+            <a href="">Email : Ayushpatel@gmail.com  ||  Rahulchaurasiya@gmail.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>
