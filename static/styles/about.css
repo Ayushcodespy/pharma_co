@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital@1&family=Poetsen+One&family=Sedan+SC&display=swap");
 
 *{
-    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'andika';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,6 +72,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
+    font-weight: 700;
     margin: 0 23px;
     letter-spacing: 0px;
 }
@@ -98,6 +101,23 @@ nav ul li a:hover{
 
 nav ul li a:hover::after{
     width: 100%;
+}
+
+.icon div{
+    cursor: pointer;
+    margin-left: 0.5rem;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--black);
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.icon div:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#6e73fa 40%, #5afafa);
 }
 
 section{
@@ -156,8 +176,8 @@ section::before{
 }
 
 .about-form img{
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
     filter: blur(0.2px);
     border-radius: 10px;
     border: 1.4px solid;
@@ -171,7 +191,7 @@ section::before{
 
 .about-form h1{
     font-family: 'poppins';
-    background: linear-gradient(90deg, #ff00d2, #fed90f, #02f1fe, #09f1b8);
+    background: linear-gradient(90deg, #ff00d2, #fed90f, #e20505, #049d31);
     -webkit-background-clip: text; 
     /* -webkit-text-stroke: 0.3px blue; */
     -webkit-text-fill-color: transparent;

@@ -116,7 +116,7 @@ def appointment():
     return render_template('appointment.html')
 
 
-#------------------------------Services Page Route (services.html)--------------------------------
+# ------------------------------Services Page Route (services.html)--------------------------------
 # @app.route('/services')
 # def services():
 #     return "hello"
@@ -146,8 +146,10 @@ def remove_item(item_id):
 
 # Sample data for cart items
 cart_items = [
-    {"id": 1, "name": "Paracetamol", "price": 5.99, "quantity": 2, "image": "images/paracetamol.jpg"},
-    {"id": 2, "name": "Ibuprofen", "price": 7.99, "quantity": 1, "image": "images/ibuprofen.jpg"},
+    {"id": 1, "name": "Paracetamol", "price": 110.00, "quantity": 2, "image": "image/paracetamol.jfif"},
+    {"id": 2, "name": "Ibuprofen", "price": 430.80, "quantity": 1, "image": "image/ibuprofen.jfif"},
+     {"id": 3, "name": "Pentocid", "price": 148.84, "quantity": 2, "image": "image/medi2.jpg"},
+    {"id": 4, "name": "Bio Oil", "price": 951, "quantity": 1, "image": "image/med5.jpg"},
     # Add more sample cart items as needed
 ]
 

@@ -16,25 +16,30 @@
 
 <body>
     <header>
+
         <nav>
-            <div class="logo"><img src="static/image/logo3.png"></div>
+            <div class="logo"><img src="/static/image/logo3.png"></div>
             <div class="company-name">
-                <h1>PHARMA CO</h1>
+                <h2>PHARMA CO</h2>
             </div>
             <div class="rightside"></div>
             <ul>
                 <li><a href="{{url_for('index')}}">Home</a></li>
                 <li><a href="{{url_for('doctors')}}">Doctor</a></li>
                 <li><a href="{{url_for('medicines')}}">Medicines</a></li>
-                <li><a href="{{url_for('services')}}">Services</a></li>
                 <li><a href="{{url_for('about')}}">About</a></li>
-                <li><a href="{{url_for('cart')}}">Cart</a></li>
                 <li><a href="{{url_for('contact')}}">Contact</a></li>
                 <li><a href="{{url_for('login')}}">Logout</a></li>
             </ul>
+            <div class="icon">
+                <div class="fa fa-search" id="search-btn"></div>
+                <a href="{{url_for('cart')}}"><div class="fa fa-shopping-cart" id="cart-btn" style="color: black;"></div></a>
+                
+            </div>
 
         </nav>
     </header>
+
 
     <section>
         <div class="container">
@@ -64,7 +69,7 @@
                 <a href="#" class="btn">Read More</a>
                 <div class="about-form">
                     <h1>PharmaCo</h1>
-                    <img src="/static/image/img3.jpg">
+                    <img src="/static/image/back5.jpg">
                 </div>
             </div>
         </div>
@@ -94,7 +99,7 @@
         </div>
     </div>
     <div class="footerbottom">
-        <p>Copyright &copy;2024; Designed by <span class="designer">Rahul & Ayush  ||  Phone : +9196784593XX</span></p>
+        <p>Copyright &copy;2024; Designed by <span class="designer">Ayush & Rahul  ||  Phone : +9196784593XX</span></p>
         <a href="">Email : Ayushpatel@gmail.com  ||  Rahulchaurasiya@gmail.com</a>
     </div>
     </footer>

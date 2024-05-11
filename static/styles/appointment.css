@@ -1,28 +1,154 @@
-body{
-    background-color: white;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.944), rgba(244, 244, 244, 0.35)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlrzCCAH3TqFW-KwMjSORzu-FHmcPFpTlqJS2oyF8nwg&s");
-    background-size: cover;
-    height: 1500px;
-}
-header{
-    display: flex;
+
+
+.logo1 img{
+  width:50px;
+  border-radius: 50%;
+  display: flex;
 }
 
+:root{
+  --black: block;
+  --light-color:#666;
+  --dark-pink:#e87084;
+  --box-shadow: 2px 2px 12px grey;
+  --border: 2rem solid rgba(0,0,0.2);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.2s linear;
+}
+
+html{
+  height: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem; 
+  scroll-behavior: smooth; 
+}
+
+body{
+  background-image: url("https://images.pexels.com/photos/3683041/pexels-photo-3683041.jpeg?auto=compress&cs=tinysrgb&w=600");
+  backdrop-filter: blur(2px);
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: -20px 0 50px;
+  justify-content: center;
+  min-height: 50vh;
+  background-position: initial;
+  background-size: cover; 
+}
+
+.company-name{
+  color: rgb(255, 0, 0);
+  font-family: 'Andika';
+  text-shadow: 1px 1px 2px black, 0 0 1em blue;
+}
+
+header{
+  height: 58px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+nav{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(250, 127, 168);
+  border: 1px solid;
+  height: 60px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 0 23px;
+  letter-spacing: 0px;
+}
+
+nav ul li a{
+  position: relative;
+  text-decoration: none;
+  color:black;
+}
+
+nav ul li a::after{
+  content: "";
+  position: absolute;
+  background: linear-gradient(10deg,#04d9ff 0%,deeppink 18%);
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -2px;
+  transition: 0.4s;
+}
+
+nav ul li a:hover{
+  color:#06aed8;
+  transition: 0.4s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.icon div{
+  cursor: pointer;
+  margin-left: 0.5rem;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--black);
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.icon div:hover{
+  color: #fff;
+  background: linear-gradient(120deg,#6e73fa 40%, #5afafa);
+}
+
+.top{
+  display: flex;
+  margin: 100px 0px 0px 0px;
+}
 .logo{
-    margin-left: 100px;
+    margin-left: 80px;
+    width: 40%;
 }
 .heading{
-    width: 650px;
-    height: 170px;
-    margin-left: 60px;
-    margin-top: 20px;
+    width: 500px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 70px;
 }
 
-.container {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.817), rgb(244, 244, 244)), url("https://wallpapers.com/images/high/silver-caduceus-medical-symbol-aagu3tpbig8wafsb.webp");
+.container1 {
+    background-color: rgba(166, 247, 248, 0.745);
     justify-content: center;
     min-height: 100vh;
-    background-position: center;
+    background-position: initial;
     background-size: cover;
     margin: 80px 100px 50px 100px;
     padding: 50px;
@@ -36,7 +162,7 @@ header{
 
 #ft-form {
     font-family: inherit;
-    font-size: 100%;
+    font-size: 130%;
     line-height: 1.15
   }
   #ft-form *,
@@ -443,7 +569,8 @@ header{
     box-shadow: 0 0 0 2px #fff,0 0 0 4px rgba(199,210,254,.5),0 0 #0000
   }
   #ft-form .btns > input[type=submit] {
-    background-color: rgb(124, 240, 246);
+    background-color: #4aaafffc;
+
     transition: background-color .1s
   }
   #ft-form .btns > input[type=submit]:hover {
@@ -455,4 +582,103 @@ header{
 #myNumberInput::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; /* Optional */
+}
+
+/* footer section */
+
+footer{
+  background-color: rgb(250, 127, 168);
+  width: 100%;
+}
+
+.footercontainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialicons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialicons a{
+  text-decoration: none;
+  padding:10px ;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialicons a i{
+  font-size: 1.3em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialicons a:hover{
+  background-color: rgb(250, 127, 168);
+  transition: 0.5s;
+}
+
+.socialicons a:hover i{
+  color: #363cf0;
+  transition: 0.5s;
+}
+
+.footernav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footernav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footernav ul li{
+  list-style: none;
+  padding: 25px 0px;
+}
+
+.footernav ul li a:hover{
+  color: wheat;
+}
+
+.footerbottom{
+  background-color: rgb(243, 94, 124);
+  padding: 20px;
+  text-align: center;
+}
+
+.footerbottom p{
+  color: white;
+}
+
+.designer{
+  opacity: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+.footerbottom a{
+  color: white;
+}
+
+.footerbottom a:hover{
+  color: purple;
+}
+
+@media (max-width:700px){
+  .footernav ul{
+      flex-direction: column;
+  }
+  .footernav ul li{
+      width: 100%;
+      text-align: center;
+      margin: 0px;
+  }
 }

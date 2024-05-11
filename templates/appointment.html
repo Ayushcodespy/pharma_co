@@ -5,72 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/appointment.css')}}">
+    <link rel="stylesheet" href=" //cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <header>
+  <header>
+    <nav>
+        <div class="logo1"><img src="/static/image/logo3.png"></div>
+        <div class="company-name">
+            <h1>PHARMA CO</h1>
+        </div>
+        <div class="rightside"></div>
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('doctors')}}">Doctor</a></li>
+            <li><a href="{{url_for('medicines')}}">Medicines</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('contact')}}">Contact</a></li>
+            <li><a href="{{url_for('login')}}">Logout</a></li>
+        </ul>
+        <div class="icon">
+            <div class="fa fa-search" id="search-btn"></div>
+            <a href="{{url_for('cart')}}"><div class="fa fa-shopping-cart" id="cart-btn" style="color: black;"></div></a>
+            
+        </div>
+    </nav>
+</header>
+    <div class="top">
         <img class="logo" src="static/image/copharma-logo.png" alt="">
         <img src="static/image/appointment.png" alt="" class="heading">
-    </header>
-    <div class="container">
-        <form action="/appointment" id="ft-form" method="POST" accept-charset="UTF-8">
-            <fieldset>
-              <legend>For person</legend>
+    </div>
+    <section><div class="container1">
+      <form action="/appointment" id="ft-form" method="POST" accept-charset="UTF-8">
+          <fieldset>
+            <legend>For person</legend>
+            <label>
+              Name
+              <input type="text" name="name" required>
+            </label>
+            <div class="two-cols">
               <label>
-                Name
-                <input type="text" name="name" required>
+                Email address
+                <input type="email" name="email" required> <!-- Updated name attribute to "email" -->
               </label>
-              <div class="two-cols">
-                <label>
-                  Email address
-                  <input type="email" name="email" required> <!-- Updated name attribute to "email" -->
-                </label>
-                <label>
-                  Phone number
-                  <input id="myNumberInput" type="number" name="phone" required>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>Appointment request</legend>
-              <div class="two-cols">
-                <label>
-                  Date
-                  <input type="date" name="appointment_date" required>
-                </label>
-                <div class="inline">
-                  <label>
-                    <input type="radio" name="timing" value="Morning">
-                    Morning
-                  </label>
-                  <label>
-                    <input type="radio" name="timing" value="Afternoon">
-                    Afternoon
-                  </label>
-                </div>
-              </div>
-              <p>Confirmation requested by</p>
+              <label>
+                Phone number
+                <input id="myNumberInput" type="number" name="phone" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Appointment request</legend>
+            <div class="two-cols">
+              <label>
+                Date
+                <input type="date" name="appointment_date" required>
+              </label>
               <div class="inline">
                 <label>
-                  <input type="radio" name="requested_by" value="email" checked>
-                  Email
+                  <input type="radio" name="timing" value="Morning">
+                  Morning
                 </label>
                 <label>
-                  <input type="radio" name="requested_by" value="phone">
-                  Phone call
+                  <input type="radio" name="timing" value="Afternoon">
+                  Afternoon
                 </label>
               </div>
-              <div>
-                <label>
-                  <input type="checkbox" name="data_processing_confirmed" value="Yes" required> <!-- Corrected name attribute -->
-                  <span>I agree to the processing of my data for the handling of my request by <b> CO-PHARMA</b>.</span>
-                </label>
-              </div>
-            </fieldset>
-            <div class="btns">
-              <input type="text" name="_gotcha" value="" style="display:none;">
-              <input class="button" type="submit" value="Submit request">
             </div>
-          </form>
-    </div>
+            <p>Confirmation requested by</p>
+            <div class="inline">
+              <label>
+                <input type="radio" name="requested_by" value="email" checked>
+                Email
+              </label>
+              <label>
+                <input type="radio" name="requested_by" value="phone">
+                Phone call
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" name="data_processing_confirmed" value="Yes" required> <!-- Corrected name attribute -->
+                <span>I agree to the processing of my data for the handling of my request by <b> CO-PHARMA</b>.</span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="btns">
+            <input type="text" name="_gotcha" value="" style="display:none;">
+            <input class="button" type="submit" value="Submit request">
+          </div>
+        </form>
+  </div></section>
+
+     <!-- footer section -->
+    <footer>
+      <div class="footercontainer">
+          <div class="socialicons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+          </div>
+          <div class="footernav">
+              <ul>
+                  <li><a href="{{url_for('index')}}">Home</a></li>
+                  <li><a href="{{url_for('doctors')}}">Doctor</a></li>
+                  <li><a href="{{url_for('medicines')}}">Medicines</a></li>
+                  <li><a href="{{url_for('about')}}">About</a></li>
+                  <li><a href="{{url_for('cart')}}">Cart</a></li>
+                  <li><a href="{{url_for('contact')}}">Contact</a></li>
+                  <!-- <li><a href="{{url_for('login')}}">Logout</a></li> -->
+              </ul>
+          </div>
+      </div>
+      <div class="footerbottom">
+          <p>Copyright &copy;2024; Designed by <span class="designer">Ayush & Rahul</span></p>
+          <a href="">Email : Ayushpatel@gmail.com || Rahulchaurasiya@gmail.com</a>
+      </div>
+  </footer>
 </body>
 </html>
